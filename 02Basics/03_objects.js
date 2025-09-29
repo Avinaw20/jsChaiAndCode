@@ -3,6 +3,7 @@
 // agr objects literal ki tarah declare karte to singleton nahi banta hai 
 // constructor se banega to hamesha singleton hee banega
 
+//neeche object literals ka explanation diya gya h
 // Object.create() //issi method ko bolte hai constructor ke through object banana 
 const mySym = Symbol("key1")
 const JSUser = {
