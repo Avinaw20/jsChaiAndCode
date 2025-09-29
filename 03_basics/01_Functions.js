@@ -43,7 +43,14 @@ function loginUserMessage(username = "sam"){
 // console.log(loginUserMessage()) // jab hm kuch paas nahi karte tab undefined aata hai o/p agr parameter me default mentioned na ho kuch 
 
 
-function calculateCartPrice(val1, val2, ...num1){
+
+// iss tarah ke shopping carts me use hote , ki admin ko pata hee nahi h ki user kitne products cart me add karega
+function calculateCartPrice(...num1){  // yha par teen dots ko rest operator kaha jaata hai
+    // jitne bhi value arguments se aa rahe hai sabko ek bundle me array banao aur wapas dedo
+    return num1
+}
+
+function calculateCartPrice(val1, val2, ...num1){ // rest operator
     return num1
 }
 
@@ -59,11 +66,14 @@ function handleObject(anyobject){
 }
 
 // handleObject(user)
+//or
 handleObject({
     username: "sam",
     price: 399
 })
 
+
+//passing array to function
 const myNewArray = [200, 400, 100, 600]
 
 function returnSecondValue(getArray){
@@ -71,4 +81,5 @@ function returnSecondValue(getArray){
 }
 
 // console.log(returnSecondValue(myNewArray));
+//or 
 console.log(returnSecondValue([200, 400, 500, 1000]));
