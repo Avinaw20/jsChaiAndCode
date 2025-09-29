@@ -19,67 +19,76 @@ const regularUser = {
     }
 }
 
-console.log(regularUser);
-// console.log(regularUser.fullname.userfullname.firstname);
+// console.log(regularUser);
+console.log(regularUser.fullname.userfullname.firstname);
 
-// const obj1 = {1: "a", 2: "b"}
-// const obj2 = {3: "a", 4: "b"}
-// const obj4 = {5: "a", 6: "b"}
+const obj1 = {1: "a", 2: "b"}
+const obj2 = {3: "a", 4: "b"}
+const obj4 = {5: "a", 6: "b"}
 
-// // const obj3 = { obj1, obj2 }
-// // const obj3 = Object.assign({}, obj1, obj2, obj4)
+// const obj3 = { obj1, obj2 }
+// const obj3 = Object.assign({}, obj1, obj2, obj4)  // {target, source} in assign function
 
-// const obj3 = {...obj1, ...obj2}
-// // console.log(obj3);
-
-
-// const users = [
-//     {
-//         id: 1,
-//         email: "h@gmail.com"
-//     },
-//     {
-//         id: 1,
-//         email: "h@gmail.com"
-//     },
-//     {
-//         id: 1,
-//         email: "h@gmail.com"
-//     },
-// ]
-
-// users[1].email
-// // console.log(tinderUser);
-
-// // console.log(Object.keys(tinderUser));
-// // console.log(Object.values(tinderUser));
-// // console.log(Object.entries(tinderUser));
-
-// // console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+const obj3 = {...obj1, ...obj2}
+// console.log(obj3);
 
 
-// const course = {
-//     coursename: "js in hindi",
-//     price: "999",
-//     courseInstructor: "hitesh"
+const users = [
+    {
+        id: 1,
+        email: "h1@gmail.com"
+    },
+    {
+        id: 2,
+        email: "h2@gmail.com"
+    },
+    {
+        id: 1,
+        email: "h3@gmail.com"
+    },
+]
+
+
+console.log(users[1].email)
+// console.log(tinderUser);
+
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
+
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+// course.courseInstructor
+
+const {courseInstructor: instructor} = course  //maine courseInstructor ko ek apna favourable naam de diya aur directly ab access kar skte
+
+// console.log(courseInstructor);
+console.log(instructor);
+//issi ko bolte hai ki object ko destructuring kari jaa rahi hai
+
+
+// json data kaise differ karta hai object se neeche wo dikhaya gya h, json is always in key, value pair
+
+// {
+//     "name": "hitesh",
+//     "coursename": "js in hindi",
+//     "price": "free"
 // }
 
-// // course.courseInstructor
 
-// const {courseInstructor: instructor} = course
+// sirf object ko hee destructure nahi karte arrays ko bhi karte hai
 
-// // console.log(courseInstructor);
-// console.log(instructor);
-
-// // {
-// //     "name": "hitesh",
-// //     "coursename": "js in hindi",
-// //     "price": "free"
-// // }
-
-// [
-//     {},
-//     {},
-//     {}
-// ]
+// jab bhi apna kaam kisi aur ke sar paar daal dete hai ussi ko API kehte hai 
+[
+    {},
+    {},
+    {}
+]
 
