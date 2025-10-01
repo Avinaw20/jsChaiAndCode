@@ -13,9 +13,9 @@ const coding = ["js", "ruby", "java", "python", "cpp"]
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
+// filter bhi apne andar call back hee leta hai
 // const newNums = myNums.filter((num) => num > 4) //filter function values return karta hai ye dhyan rakhna
-// console.log(newNums)
+// console.log(newNums) //[5, 6, 7, 8, 9, 10]
 
 
 const newNums = myNums.filter( (num) => {   //since curly bracket laga diya h to ek scope return hoga arrow function se ye keh rhe to return ka use karna hee padega
